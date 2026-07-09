@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>build · forge-ci</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">▲</div>
+      <a class="brand" href="/">forge <span>/ ci</span></a>
+      <div class="header-right">
+        <button id="retry-btn">Retry</button>
+        <button id="cancel-btn" class="danger">Cancel</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="detail-head">
+      <span class="status-dot" id="dot"></span>
+      <h1 id="title">Build</h1>
+      <span class="status-label" id="status"></span>
+    </div>
+    <p class="detail-sub" id="sub"></p>
+
+    <div id="steps"></div>
+
+    <div class="badge-box">
+      <img id="badge-img" alt="status badge" height="20" />
+      <code id="badge-url"></code>
+    </div>
+  </div>
+
+  <script src="/build.js"></script>
+</body>
+</html>
